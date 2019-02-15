@@ -106,6 +106,7 @@ ext {
             "lifecyclemodel"             : "me.jessyan:lifecyclemodel:1.0.1",
             "fragmentation"              : "me.yokeyword:fragmentation:1.2.0",
             "jsoup"                      : "org.jsoup:jsoup:1.11.2",
+            "zxing"                      : "com.google.zxing:core:3.3.3",
 
             // test
             "junit"                      : "junit:junit:4.12",
