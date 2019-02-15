@@ -1,1 +1,1 @@
-include ':app', ':zscan', ':zscan-kotlin', ':zxing'
+include ':app', ':zscan', ':zxing'

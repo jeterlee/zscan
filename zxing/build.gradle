@@ -1,14 +1,13 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
+//apply plugin: 'com.jfrog.bintray'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionCode 100
         versionName "1.0.0"
-
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-proguard-rules.pro'
     }
@@ -22,26 +21,17 @@ android {
 
     lintOptions {
         abortOnError false
+        warning 'InvalidPackage'
     }
-}
-
-/**
- * 使用 publish 闭包来设置你的应用的信息
- */
-publish {
-    userOrg = 'jeterlee'// bintray用户名
-    groupId = 'com.jeterlee.zxing'// 用于上传的group id（就是library module的package）
-    artifactId = ''// bintray创建的package
-    publishVersion = '1.0.0'// 版本号（不能以“-SNAPSHOT”结尾）
-    desc = 'This is a super scan code.'// 在bintray中项目的简短描述
-    website = 'https://github.com/jeterlee/zscan'// 一个与该项目网址相关的URL字符串（一般为Github仓库）
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation rootProject.ext.dependencies["appcompat-v7"]
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    implementation rootProject.ext.dependencies["zxing"]
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+//    implementation rootProject.ext.dependencies["zxing"]
 }
+
+//apply from: "../bintrayUpload.gradle"
