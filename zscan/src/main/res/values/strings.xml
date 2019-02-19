@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">zscan</string>
+
+    <string name="zscan_name">扫一扫</string>
+    <string name="zscan_msg">将二维码或条形码放入框内,即可自动扫描</string>
+    <string name="zscan_fail">扫码失败，重新扫描！</string>
+    <string name="zscan_success">结果已复制到剪切板！</string>
+
+    <string name="zscan_flash_close">闪光灯关</string>
+    <string name="zscan_flash_open">闪光灯开</string>
+    <string name="zscan_analyze_qr">识别二维码</string>
+
+    <string name="zscan_msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+    <string name="zscan_button_ok">确定</string>
 </resources>

@@ -24,6 +24,7 @@ allprojects {
         jcenter()
         mavenCentral()
         maven { url 'https://dl.bintray.com/jeterlee/maven' }
+        maven { url 'https://jitpack.io' }
     }
     tasks.withType(Javadoc) {
         options.addStringOption('Xdoclint:none', '-quiet')

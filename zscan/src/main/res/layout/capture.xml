@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <SurfaceView
+        android:id="@+id/capture_preview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"/>
+
+    <com.zxing.view.ViewfinderView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/capture_viewfinder_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:inner_corner_color="?attr/colorAccent"
+        app:inner_corner_length="25dp"
+        app:inner_corner_width="4dp"
+        app:inner_height="250dp"
+        app:inner_marginTop="150dp"
+        app:inner_scan_bitmap="@drawable/zscan_image"
+        app:inner_scan_isCircle="false"
+        app:inner_scan_speed="15"
+        app:inner_scan_textTradeMark="@string/zscan_msg"
+        app:inner_width="250dp"/>
+</RelativeLayout>
