@@ -3,6 +3,15 @@
 - **项目说明**：`zscan` 是将 `zxing` & `zbar` 两者的优点结合在一起而诞生（即：`zxing` 优秀的 `camera` 管理，自定义扫描界面易于管理；`zbar` 底层是 C 实现，拥有高速的解码效果），实现的快速且稳定的摄像头扫码器，支持扫描二维码和一维码，生成二维码，自定义扫码界面。
 
 
+## Thanks
+- [PressScanCode --> 识别 View 上的二维码的工具库](https://github.com/BolexLiu/PressScanCode)
+- [barcodescanner --> Barcode Scanner Libraries for Android](https://github.com/dm77/barcodescanner)
+- [BGAQRCode-Android --> QRCode 扫描二维码、扫描条形码、相册获取图片后识别、生成带 Logo 二维码、支持微博微信 QQ 二维码扫描样式](https://github.com/bingoogolapple/BGAQRCode-Android)
+- [android-zxingLibrary --> 几行代码快速集成二维码扫描功能](https://github.com/yipianfengye/android-zxingLibrary)
+- [QrCodeScan --> Android手机客户端二维码扫描](https://github.com/chentao0707/QrCodeScan)
+- [Android-Zxing --> android google zxing 可配置扫描框、线样式 ，生成二维码（文字、联系人）](https://github.com/mylhyl/Android-Zxing)
+
+
 ## License
 ```
 Copyright (c) 2019, The Jeterlee authors 
