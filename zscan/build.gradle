@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-//apply plugin: 'com.jfrog.bintray'
 
 android {
     compileSdkVersion 28
@@ -20,8 +19,9 @@ android {
     }
 
     lintOptions {
+        disable 'InvalidPackage'
+        disable "ResourceType"
         abortOnError false
-        warning 'InvalidPackage'
     }
 }
 
@@ -34,4 +34,4 @@ dependencies {
     implementation rootProject.ext.dependencies["zxing"]
 }
 
-//apply from: "../bintrayUpload.gradle"
+apply from: '../bintrayUpload.gradle'

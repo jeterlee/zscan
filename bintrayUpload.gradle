@@ -10,7 +10,7 @@ apply plugin: 'com.novoda.bintray-release'
 
 // local properties（隐私内容，此文件不会上传）
 Properties properties = new Properties()
-File localPropertiesFile = project.file("local.properties");
+File localPropertiesFile = project.file("local.properties")
 if (localPropertiesFile.exists()) {
     properties.load(localPropertiesFile.newDataInputStream())
 }
@@ -24,7 +24,7 @@ if (projectPropertiesFile.exists()) {
 // read properties
 def user = properties.getProperty("bintray.user")
 def apiKey = properties.getProperty("bintray.apiKey")
-def unpublished = properties.getProperty("bintray.unpublished")
+def run = properties.getProperty("bintray.dryRun")
 
 def projectBintrayRepo = properties.getProperty("project.bintrayRepo")
 def projectGroupId = properties.getProperty("project.groupId")
@@ -87,7 +87,7 @@ artifacts {
  *
  *      // gradle-4.2+ / 0.7.0 , 0.8.0
  *      // gradle-4.1 / gradle 3.0.0 / 0.6.1
- * - 1、classpath 'com.novoda:bintray-release:0.6.1'
+ * - 1、classpath 'com.novoda:bintray-release:<latest-version>'
  * - 2、apply plugin: 'com.novoda.bintray-release'// 上传JCenter仓库
  *
  * 使用 publish 闭包来设置你的应用的信息（上传JCenter仓库）
@@ -101,7 +101,7 @@ publish {
     userOrg = "jeterlee"// 用于上传的组织名称（也就是bintray用户名）
     bintrayUser = user// 用于上传的用户名
     bintrayKey = apiKey// 用户账户的bintray API密钥
-    dryRun = unpublished// 若设置为“true”，则运行所有内容，但不会将包上传到bintray。设为“false”，则正常上传。
+    dryRun = run// 若设置为“true”，则运行所有内容，但不会将包上传到bintray。设为“false”，则正常上传
     repoName = projectBintrayRepo// 代码仓库名称（默认设置为“maven”）
     groupId = projectGroupId// 用于上传的group id（就是library module的package）
     artifactId = projectArtifactId// bintray创建的package
