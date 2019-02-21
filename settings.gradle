@@ -1,1 +1,1 @@
-include ':app', ':zscan', ':zxing'
+include ':app', ':zscan', ':zxing', ':zbarbuildproject'
