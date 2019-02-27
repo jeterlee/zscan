@@ -4,8 +4,9 @@
 
 
 ## Thanks
+- [barcodescanner 【推荐】--> Barcode Scanner Libraries for Android](https://github.com/dm77/barcodescanner)
+- [QrCodeScanner --> 融合Zxing和Zbar扫码框架，对条形码二维码高兼容，扫码效率奇高](https://github.com/heiBin/QrCodeScanner)
 - [PressScanCode --> 识别 View 上的二维码的工具库](https://github.com/BolexLiu/PressScanCode)
-- [barcodescanner --> Barcode Scanner Libraries for Android](https://github.com/dm77/barcodescanner)
 - [BGAQRCode-Android --> QRCode 扫描二维码、扫描条形码、相册获取图片后识别、生成带 Logo 二维码、支持微博微信 QQ 二维码扫描样式](https://github.com/bingoogolapple/BGAQRCode-Android)
 - [android-zxingLibrary --> 几行代码快速集成二维码扫描功能](https://github.com/yipianfengye/android-zxingLibrary)
 - [QrCodeScan --> Android手机客户端二维码扫描](https://github.com/chentao0707/QrCodeScan)
